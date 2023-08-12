@@ -9,5 +9,14 @@ export class ListComponent {
 
   public title: string = 'List Componet';
 
-  public heroesLst:string[] = ['Item1', 'Item2', 'Item3', 'Item4'];
+  public heroesLst:string[] = ['Spider Man', 'Iron Man', 'Dead Pool', 'Wollverine'];
+  public deletedHero?:string;
+
+  public removeLastHero():void{
+
+   this.deletedHero = this.heroesLst.pop();
+
+  }
+
+
 }

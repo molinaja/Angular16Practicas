@@ -1,11 +1,10 @@
 <h1>Personajes DB</h1>
 <hr>
-
 <div class="row">
   <div class="col">
-    <app-dragonball-list></app-dragonball-list>
+    <app-dragonball-list [Lstcharacters]="characters"></app-dragonball-list>
   </div>
   <div class="col">
-    <app-dragonball-add-character></app-dragonball-add-character>
+    <app-dragonball-add-character (onNewCharacterEmitter)="onNewCharacter($event)"></app-dragonball-add-character>
   </div>
 </div>

@@ -2,9 +2,9 @@
 <hr>
 <div class="row">
   <div class="col">
-    <app-dragonball-list [Lstcharacters]="characters"></app-dragonball-list>
+    <app-dragonball-list [Lstcharacters]="dbzService.characters" (onDelCharacterByIDEmitter)="dbzService.onDelCharterByID($event)" ></app-dragonball-list>
   </div>
   <div class="col">
-    <app-dragonball-add-character (onNewCharacterEmitter)="onNewCharacter($event)"></app-dragonball-add-character>
+    <app-dragonball-add-character (onNewCharacterEmitter)="dbzService.onNewCharacter($event)"></app-dragonball-add-character>
   </div>
 </div>
